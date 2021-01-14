@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:text="MoneyConverter"
+           android:textColor="#000000"
+           android:textSize="23dp">
+       </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/inputMoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#009688"
+            android:textSize="50px">
+        </EditText>
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/groupChoise"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="fill_horizontal">
+
+        <RadioButton
+            android:id="@+id/euroDinar"
+            android:text="Euro -> Dinar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="50px">
+        </RadioButton>
+        <RadioButton
+            android:id="@+id/dinarEuro"
+            android:text="Dinar-> Euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textColor="#000000"
+            android:textSize="50px">
+        </RadioButton>
+    </RadioGroup>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CONVERT"
+            android:textColor="#000000"
+            android:textSize="50px">
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/resultat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="The result will be displayed here"
+            android:textColor="#4A4949"
+            android:textSize="40px">
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>
